@@ -1,0 +1,136 @@
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* --- Variable Definitions from Site Plan --- */
+:root {
+    --primary-color: #2A4B58;
+    --secondary-color: #E0E3E8;
+    --accent1-color: #E68A4E;
+    --accent2-color: #87B3B0;
+
+    --heading-font: 'DM Serif Text', serif;
+    --paragraph-font: 'Roboto Flex', sans-serif;
+}
+
+/* --- General Body and Typography Styles --- */
+body {
+    background-color: var(--secondary-color); /* Updated */
+    font-family: var(--paragraph-font);       /* Updated */
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font); /* Updated */
+}
+
+/* --- Page Layout and Centering --- */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: rgba(42, 75, 88, 0.7); /* Updated Primary color with transparency */
+}
+
+nav a {
+    text-align: center;
+    color: var(--secondary-color); /* Updated */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color); /* Updated */
+    color: var(--primary-color);           /* Updated */
+}
+
+/* --- Main Content Sections --- */
+main section {
+    text-align: center;
+}
+
+.home-title {
+    color: var(--secondary-color); /* Updated */
+}
+
+h4 { /* This targets the "Make Memories..." text */
+    color: var(--secondary-color); /* Updated */
+}
+
+#background {
+    height: 725px;
+    background-color: var(--accent2-color); /* Updated */
+}
+
+.msg {
+    background-color: var(--primary-color); /* Updated */
+    color: var(--secondary-color);          /* Updated */
+}
+
+.msg h2 {
+    color: var(--secondary-color); /* Updated */
+}
+
+.msg p {
+    color: var(--secondary-color); /* Updated */
+    font-size: .8em;
+}
+
+/* --- Buttons and Links --- */
+.button-box {
+    text-align: center;
+}
+
+.book, .join {
+    background-color: var(--accent1-color); /* Updated */
+    color: var(--primary-color);            /* Updated */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: var(--accent2-color); /* Updated */
+    color: var(--primary-color);            /* Updated */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color); /* Updated */
+    color: var(--secondary-color);          /* Updated */
+}
+
+footer a {
+    color: var(--secondary-color); /* Updated */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent1-color); /* Updated */
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* --- Image Sizing --- */
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
