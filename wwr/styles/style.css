@@ -1,4 +1,4 @@
-/* --- Google Fonts Import --- */
+/* --- Google Fonts Import (Added as per instructions) --- */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto+Flex:opsz@8..144&display=swap');
 
 /* --- Variable Definitions from Site Plan --- */
@@ -12,75 +12,127 @@
     --paragraph-font: 'Roboto Flex', sans-serif;
 }
 
-/* --- General Body and Typography Styles --- */
+/* --- Simple Reset and Body Styles --- */
 body {
-    background-color: var(--secondary-color); /* Updated */
-    font-family: var(--paragraph-font);       /* Updated */
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font), Helvetica, Arial, sans-serif; /* Added backup fonts */
+    font-size: 22px; /* Added font size */
+    margin: 0;      /* Added reset */
+    padding: 0;     /* Added reset */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font); /* Updated */
+h2 {
+    margin: 0; /* Added reset */
 }
 
-/* --- Page Layout and Centering --- */
+/* --- Page Layout --- */
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: rgba(42, 75, 88, 0.7);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding-top: 5px; /* Added padding */
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 35px; /* Added padding */
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
 }
 
 #hero-img {
     width: 100%;
 }
 
-/* --- Header and Navigation --- */
-header {
-    background-color: rgba(42, 75, 88, 0.7); /* Updated Primary color with transparency */
+.home-title {
+    font-family: var(--heading-font), 'Times New Roman', serif; /* Added heading font and backups */
+    font-size: 2em; /* Added font size */
+    color: var(--secondary-color);
+    margin-top: 10px; /* Added margin */
 }
 
-nav a {
-    text-align: center;
-    color: var(--secondary-color); /* Updated */
-    text-decoration: none;
+#hero-msg h4 {
+    color: var(--secondary-color);
 }
 
-nav a:hover {
-    background-color: var(--accent2-color); /* Updated */
-    color: var(--primary-color);           /* Updated */
-}
-
-/* --- Main Content Sections --- */
+/* --- Main Content and Cards --- */
 main section {
     text-align: center;
 }
 
-.home-title {
-    color: var(--secondary-color); /* Updated */
+main section img {
+    box-sizing: border-box; /* Added box-sizing */
 }
 
-h4 { /* This targets the "Make Memories..." text */
-    color: var(--secondary-color); /* Updated */
+.card-img {
+    border: 10px solid var(--primary-color); /* Added border */
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; /* Added margin */
 }
 
 #background {
     height: 725px;
-    background-color: var(--accent2-color); /* Updated */
+    background-color: var(--accent2-color);
 }
 
+/* --- Message Section --- */
 .msg {
-    background-color: var(--primary-color); /* Updated */
-    color: var(--secondary-color);          /* Updated */
+    background-color: var(--primary-color);
+    line-height: 1.5em; /* Added line height */
+    padding: 35px;      /* Added padding */
 }
 
 .msg h2 {
-    color: var(--secondary-color); /* Updated */
+    font-family: var(--heading-font), 'Times New Roman', serif; /* Added heading font */
+    color: var(--secondary-color);
 }
 
 .msg p {
-    color: var(--secondary-color); /* Updated */
-    font-size: .8em;
+    color: var(--secondary-color);
+    font-size: .8em; /* Added font size */
+    padding-bottom: 15px; /* Added padding */
 }
 
 /* --- Buttons and Links --- */
@@ -89,33 +141,35 @@ h4 { /* This targets the "Make Memories..." text */
 }
 
 .book, .join {
-    background-color: var(--accent1-color); /* Updated */
-    color: var(--primary-color);            /* Updated */
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
     text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
+    font-size: 18px; /* Added font size */
+    padding: 15px 30px; /* Added padding */
+    margin-top: 50px; /* Added margin */
+    border-radius: 5px; /* Added border-radius */
 }
 
 .book:hover, .join:hover {
-    background-color: var(--accent2-color); /* Updated */
-    color: var(--primary-color);            /* Updated */
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 /* --- Footer --- */
 footer {
-    background-color: var(--primary-color); /* Updated */
-    color: var(--secondary-color);          /* Updated */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 25px 50px; /* Added padding */
+    margin-top: 200px; /* Added margin */
 }
 
 footer a {
-    color: var(--secondary-color); /* Updated */
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--accent1-color); /* Updated */
+    color: var(--accent1-color);
 }
 
 footer p {
@@ -126,11 +180,16 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-/* --- Image Sizing --- */
+footer .social img {
+    padding-top: 15px; /* Added padding */
+}
+
+/* --- Icons and Logo --- */
 .logo {
     width: 80px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px; /* Added padding */
 }
