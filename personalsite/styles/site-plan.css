@@ -14,11 +14,10 @@ Fonts are separated by a | */
   .color-box {
     width: 100px;
     height: 100px;
-    /* This border uses your black accent color so the white box is visible */
+
     border: 1px solid var(--accent1-color); 
   }
 
-  /* These rules set the background color for each specific box */
   .primary-bg {
     background-color: var(--primary-color);
   }
