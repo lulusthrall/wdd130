@@ -10,9 +10,6 @@ Fonts are separated by a | */
   --accent1-color: #000000;
   --accent2-color: #FFFFFF;
 
-  /* ADD THESE NEW RULES BELOW 
-  */
-
   /* This styles the size for all boxes */
   .color-box {
     width: 100px;
