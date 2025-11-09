@@ -50,6 +50,28 @@ Fonts are separated by a | */
   --nav-hover-background-color: #396E94;
 }
 
+/* --- NAVIGATION STYLES --- */
+
+nav {
+  /* Sets the main bar color to Pokémon Blue */
+  background-color: var(--primary-color); 
+  padding: 1rem; /* Adds some space around your links */
+}
+
+nav a {
+  /* Sets the link text color to White */
+  color: var(--accent2-color); 
+  text-decoration: none; /* Removes the default underline from links */
+  padding: 0.5rem 1rem; /* Gives each link space so they aren't crowded */
+}
+
+nav a:hover {
+  /* Sets the background on hover to Pokémon Yellow */
+  background-color: var(--secondary-color); 
+  
+  /* Sets the text on hover to Black */
+  color: var(--accent1-color); 
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
