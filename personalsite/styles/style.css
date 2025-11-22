@@ -1,0 +1,332 @@
+/* -------------------------------------------------- */
+/* 1. FONTS & VARIABLES (The "Look")                  */
+/* -------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+    /* Pokemon Color Palette */
+    --primary-blue: #2A75BB;
+    --primary-yellow: #FFCB05;
+    --accent-black: #232323;
+    --accent-white: #FFFFFF;
+    --bg-light: #f4f4f4;
+    
+    /* Typography */
+    --heading-font: 'Press Start 2P', cursive; /* 8-bit style */
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* -------------------------------------------------- */
+/* 2. GLOBAL STYLES                                   */
+/* -------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-white);
+    color: var(--accent-black);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px; /* Softens the images */
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 0.9rem; }
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-yellow);
+}
+
+/* -------------------------------------------------- */
+/* 3. HEADER & NAVIGATION                             */
+/* -------------------------------------------------- */
+header {
+    background-color: var(--primary-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 5px solid var(--primary-yellow);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 70px;
+    border: 2px solid var(--accent-white);
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--accent-white);
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--primary-yellow);
+    color: var(--accent-black);
+}
+
+/* -------------------------------------------------- */
+/* 4. HERO SECTION (Home Page)                        */
+/* -------------------------------------------------- */
+#hero {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+#hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 4px solid var(--primary-blue);
+    box-shadow: 5px 5px 0 var(--primary-yellow); /* Retro shadow */
+}
+
+#hero-msg {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* 5. HOME PAGE GRID (Wireframe Layout)               */
+/* -------------------------------------------------- */
+/* This section matches your wireframe: Logo Left, Text Right */
+.home-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Left Column fixed, Right fills space */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* The "Code Cat" Logo Box */
+.card-img {
+    width: 100%;
+    border: 4px solid var(--primary-blue);
+    box-shadow: 5px 5px 0 var(--accent-black);
+    padding: 0;
+    background-color: var(--primary-yellow);
+}
+
+/* The "Welcome" Text Box */
+.intro-text {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-left: 5px solid var(--primary-yellow);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* The Bottom Two Boxes ("What You'll Find" + "Purpose") */
+/* We target the container these are in. If they are just divs in main,
+   we can wrap them or style them if they follow .intro-text */
+.purpose-text {
+    grid-column: 1 / -1; /* Spans full width */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two side-by-side boxes */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.purpose-text div {
+    background-color: var(--accent-white);
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary-blue);
+}
+
+/* -------------------------------------------------- */
+/* 6. COLLECTION GALLERY (Wireframe Layout)           */
+/* -------------------------------------------------- */
+.content-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.gallery-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.card-gallery {
+    display: grid;
+    /* Matches wireframe 4-column grid */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card-item {
+    background: var(--accent-white);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(42, 117, 187, 0.2);
+    border-color: var(--primary-yellow);
+}
+
+.card-item img {
+    margin-bottom: 1rem;
+}
+
+/* Rarity Guide at Bottom */
+.rarity-guide {
+    background-color: var(--bg-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Text Left, Image Right */
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px dashed var(--primary-blue);
+}
+
+/* -------------------------------------------------- */
+/* 7. VALUATION GUIDE (Wireframe Layout)              */
+/* -------------------------------------------------- */
+.guide-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.guide-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--bg-light);
+    padding-bottom: 1rem;
+}
+
+.guide-content h2 {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-left: 5px solid var(--primary-yellow);
+}
+
+/* This matches the "Condition" wireframe (Text Left, Image Right) */
+.guide-section-condition {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.guide-section-condition ul {
+    background-color: var(--bg-light);
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    border-radius: 8px;
+}
+
+.guide-section-condition img {
+    border: 4px solid var(--primary-blue);
+    box-shadow: 5px 5px 0 var(--accent-black);
+}
+
+/* The Steps Box */
+.guide-steps {
+    background-color: var(--bg-light);
+    border: 2px solid var(--primary-blue);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+/* -------------------------------------------------- */
+/* 8. FOOTER                                          */
+/* -------------------------------------------------- */
+footer {
+    background-color: var(--accent-black);
+    color: var(--accent-white);
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--primary-yellow);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social img {
+    width: 30px;
+    filter: invert(1); /* Makes black icons white if needed */
+    transition: transform 0.2s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+/* -------------------------------------------------- */
+/* 9. MOBILE RESPONSIVENESS                           */
+/* -------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .home-grid, 
+    .purpose-text, 
+    .rarity-guide, 
+    .guide-section-condition {
+        grid-template-columns: 1fr; /* Stack everything on mobile */
+    }
+    
+    /* On mobile, image goes above text usually looks better */
+    .card-img {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
