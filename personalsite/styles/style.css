@@ -211,6 +211,11 @@ nav a:hover {
 
 .card-item img {
     margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /* Rarity Guide at Bottom */
@@ -223,6 +228,25 @@ nav a:hover {
     padding: 2rem;
     border-radius: 10px;
     border: 2px dashed var(--primary-blue);
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments for the 4-column grid */
+@media screen and (max-width: 1024px) {
+    .card-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-gallery {
+        grid-template-columns: 1fr; /* 1 column on phones */
+    }
+    
+    .rarity-guide {
+        grid-template-columns: 1fr; /* Stack rarity section */
+        text-align: center;
+    }
 }
 
 /* -------------------------------------------------- */
