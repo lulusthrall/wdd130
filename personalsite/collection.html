@@ -32,10 +32,15 @@
         <!-- Card Grid (Add your card images here) -->
         <section class="card-gallery">
             <div class="card-item">
-                <img src="images/charmander-mew.png" alt="Charmander Card" onclick="openModal(this)" style="cursor: pointer;">
+                <img src="images/charmander-mew.png" 
+                     alt="Charmander: 151" 
+                     data-back="images/back-of-card.png" 
+                     onclick="openInspector(this)" 
+                     style="cursor: pointer;">
                 <h3>Charmander: 151</h3>
                 <p>Market Value (Near Mint): <strong>$55.52</strong></p>
                 <p>Updated November 21, 2025</p>
+                <p class="inspection-hint">Click to Inspect</p>
             </div>
             <div class="card-item">
                 <img src="images/pikachu-lot.png" alt="Pikachu Card" onclick="openModal(this)" style="cursor: pointer;">
@@ -63,13 +68,6 @@
 
     </main>
 
-    <!-- THE MODAL (Hidden by default) -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-
     <!-- FOOTER -->
     <footer>
         <p>Pokémon TCG Vault &copy; 2025 - Kyle Galbraith</p>
@@ -87,27 +85,105 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT FOR MODAL -->
+    <!-- INSPECTOR MODAL -->
+    <div id="inspectorModal" class="modal">
+        <span class="close" onclick="closeInspector()">&times;</span>
+        
+        <!-- Image Container for Zooming -->
+        <!-- Added padding style to create a buffer zone around the card -->
+        <div class="modal-image-container" style="padding: 30px;" onmousemove="zoomImage(event)" onmouseleave="resetZoom()">
+            <img class="modal-content" id="inspectorImg">
+        </div>
+
+        <!-- Controls -->
+        <div style="text-align: center;">
+            <p id="inspectorCaption" style="color:white; margin-bottom: 10px;"></p>
+            <p class="inspection-hint">Hover to Zoom • Click button to Flip</p>
+            <button class="flip-btn" onclick="flipCard()">🔄 Flip Card</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
     <script>
-        function openModal(element) {
-            var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
+        // Variables to track current card state
+        let currentFrontSrc = "";
+        let currentBackSrc = "";
+        let isShowingFront = true;
+
+        function openInspector(element) {
+            const modal = document.getElementById("inspectorModal");
+            const modalImg = document.getElementById("inspectorImg");
+            const captionText = document.getElementById("inspectorCaption");
+
+            // 1. Save the sources
+            currentFrontSrc = element.src;
+            // If no back image exists, use a default placeholder or the front again
+            currentBackSrc = element.getAttribute("data-back") || "images/pokemon_card_back.jpg"; 
             
+            // 2. Reset state
+            isShowingFront = true;
+            modalImg.src = currentFrontSrc;
+            captionText.innerHTML = element.alt + " (Front)";
+            
+            // 3. Show Modal
             modal.style.display = "block";
-            modalImg.src = element.src;
-            captionText.innerHTML = element.alt; // Uses the alt text as a caption
         }
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
+        function closeInspector() {
+            document.getElementById("inspectorModal").style.display = "none";
+            resetZoom(); // Ensure zoom is reset when closing
+        }
+
+        function flipCard() {
+            const modalImg = document.getElementById("inspectorImg");
+            const captionText = document.getElementById("inspectorCaption");
+
+            if (isShowingFront) {
+                modalImg.src = currentBackSrc;
+                captionText.innerHTML = captionText.innerHTML.replace("(Front)", "(Back)");
+                isShowingFront = false;
+            } else {
+                modalImg.src = currentFrontSrc;
+                captionText.innerHTML = captionText.innerHTML.replace("(Back)", "(Front)");
+                isShowingFront = true;
+            }
+        }
+
+        // --- ZOOM LOGIC ---
+        function zoomImage(e) {
+            const img = document.getElementById("inspectorImg");
+            // Get the bounding rectangle of the IMAGE, not the container
+            const rect = img.getBoundingClientRect();
+            
+            // 1. Calculate where the mouse is relative to the IMAGE
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // 2. Calculate percentage
+            let xPercent = (x / rect.width) * 100;
+            let yPercent = (y / rect.height) * 100;
+
+            // 3. Clamp values to 0-100% so hovering in the padding doesn't break it
+            xPercent = Math.max(0, Math.min(100, xPercent));
+            yPercent = Math.max(0, Math.min(100, yPercent));
+
+            // 4. Set the pivot point
+            img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+            
+            // 5. Scale up
+            img.style.transform = "scale(2.5)";
+        }
+
+        function resetZoom() {
+            const img = document.getElementById("inspectorImg");
+            img.style.transform = "scale(1)";
         }
         
-        // Close modal if user clicks outside the image
+        // Close if clicking outside
         window.onclick = function(event) {
-            var modal = document.getElementById("myModal");
+            const modal = document.getElementById("inspectorModal");
             if (event.target == modal) {
-                modal.style.display = "none";
+                closeInspector();
             }
         }
     </script>
