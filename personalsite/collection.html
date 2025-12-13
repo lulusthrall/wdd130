@@ -29,31 +29,319 @@
             <p>Welcome to the heart of the TCG Vault. This gallery features a curated selection of cards from my personal collection, focusing on the iconic Base Set, Jungle, and Fossil expansions.</p>
         </section>
 
+        <style>
+            body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+            .header { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .card-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+            .card-item { 
+                background: white; border-radius: 10px; padding: 15px; width: 220px; 
+                text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+                transition: transform 0.2s;
+            }
+            .card-item:hover { transform: translateY(-5px); }
+            .card-item img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+            .price-tag { background: #d1fae5; color: #065f46; padding: 5px 10px; border-radius: 15px; font-weight: bold; display: inline-block; margin-top: 5px; }
+            h3 { margin: 5px 0; font-size: 1.1rem; }
+            .meta { color: #6b7280; font-size: 0.9rem; }
+        </style>
+
         <!-- Card Grid (Add your card images here) -->
         <section class="card-gallery">
-            <div class="card-item">
-                <img src="images/charmander-mew.png" 
-                     alt="Charmander: 151" 
-                     data-back="images/back-of-card.png" 
-                     onclick="openInspector(this)" 
-                     style="cursor: pointer;">
-                <h3>Charmander: 151</h3>
-                <p>Market Value (Near Mint): <strong>$55.52</strong></p>
-                <p>Updated November 21, 2025</p>
-                <p class="inspection-hint">Click to Inspect</p>
             </div>
-            <div class="card-item">
-                <img src="images/pikachu-lot.png" alt="Pikachu Card" onclick="openModal(this)" style="cursor: pointer;">
-                <h3>Pikachu: Lost Origin Trainer Gallery</h3>
-                <p>Market Value (Near Mint): <strong>$19.55</strong></p>
-                <p>Updated November 21,2025</p>
+                <div class="card-item">
+                <img src="https://images.pokemontcg.io/me1/133.png" alt="Bulbasaur">
+                <h3>Bulbasaur</h3>
+                <div class="meta">Mega Evolution (133/132)</div>
+                <div class="price-tag">$13.88</div>
             </div>
+            
             <div class="card-item">
-                <img src="images/bulbasaur-meg.png" alt="Bulbasaur Card" onclick="openModal(this)" style="cursor: pointer;">
-                <h3>Bulbasaur: Mega Evolutions</h3>
-                <p>Market Value (Near Mint) <strong>$17.04</strong></p>
-                <p>Updated November 21, 2025</p>
+                <img src="https://images.pokemontcg.io/me1/134.png" alt="Ivysaur">
+                <h3>Ivysaur</h3>
+                <div class="meta">Mega Evolution (134/132)</div>
+                <div class="price-tag">$16.46</div>
             </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/me1/177.png" alt="Mega Venusaur ex">
+                <h3>Mega Venusaur ex</h3>
+                <div class="meta">Mega Evolution (177/132)</div>
+                <div class="price-tag">$149.11</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3pt5/172.png" alt="Caterpie">
+                <h3>Caterpie</h3>
+                <div class="meta">151 (172/165)</div>
+                <div class="price-tag">$10.52</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv10/186.png" alt="Crustle">
+                <h3>Crustle</h3>
+                <div class="meta">Destined Rivals (186/182)</div>
+                <div class="price-tag">$2.35</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv10/188.png" alt="Hydrapple">
+                <h3>Hydrapple</h3>
+                <div class="meta">Destined Rivals (188/182)</div>
+                <div class="price-tag">$3.11</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv5/203.png" alt="Iron Leaves ex">
+                <h3>Iron Leaves ex</h3>
+                <div class="meta">Temporal Forces (203/162)</div>
+                <div class="price-tag">$24.14</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv9/160.png" alt="Maractus">
+                <h3>Maractus</h3>
+                <div class="meta">Journey Together (160/159)</div>
+                <div class="price-tag">$1.72</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/me1/137.png" alt="Ninjask">
+                <h3>Ninjask</h3>
+                <div class="meta">Mega Evolution (137/132)</div>
+                <div class="price-tag">$3.28</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv1/225.png" alt="Gyarados ex">
+                <h3>Gyarados ex</h3>
+                <div class="meta">Scarlet & Violet (225/198)</div>
+                <div class="price-tag">$5.03</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/me1/142.png" alt="Inteleon">
+                <h3>Inteleon</h3>
+                <div class="meta">Mega Evolution (142/132)</div>
+                <div class="price-tag">$2.64</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh12pt5gg/GG07.png" alt="Keldeo">
+                <h3>Keldeo</h3>
+                <div class="meta">Crown Zenith Galarian Gallery (GG07/70)</div>
+                <div class="price-tag">$10.01</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh12pt5gg/GG39.png" alt="Lumineon V">
+                <h3>Lumineon V</h3>
+                <div class="meta">Crown Zenith Galarian Gallery (GG39/70)</div>
+                <div class="price-tag">$13.97</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh12pt5gg/GG06.png" alt="Manaphy">
+                <h3>Manaphy</h3>
+                <div class="meta">Crown Zenith Galarian Gallery (GG06/70)</div>
+                <div class="price-tag">$3.08</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv9/162.png" alt="Wailord">
+                <h3>Wailord</h3>
+                <div class="meta">Journey Together (162/159)</div>
+                <div class="price-tag">$10.85</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv1/206.png" alt="Wiglett">
+                <h3>Wiglett</h3>
+                <div class="meta">Scarlet & Violet (206/198)</div>
+                <div class="price-tag">$9.66</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv10/189.png" alt="Rapidash">
+                <h3>Rapidash</h3>
+                <div class="meta">Destined Rivals (189/182)</div>
+                <div class="price-tag">$6.30</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/me1/138.png" alt="Vulpix">
+                <h3>Vulpix</h3>
+                <div class="meta">Mega Evolution (138/132)</div>
+                <div class="price-tag">$13.09</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3pt5/173.png" alt="Pikachu">
+                <h3>Pikachu</h3>
+                <div class="meta">151 (173/165)</div>
+                <div class="price-tag">$41.03</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swshp/SWSH062.png" alt="Pikachu VMAX">
+                <h3>Pikachu VMAX</h3>
+                <div class="meta">SWSH Black Star Promos (SWSH062/307)</div>
+                <div class="price-tag">$10.13</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv8/222.png" alt="Flygon ex">
+                <h3>Flygon ex</h3>
+                <div class="meta">Surging Sparks (222/191)</div>
+                <div class="price-tag">$2.27</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv4/226.png" alt="Hoopa ex">
+                <h3>Hoopa ex</h3>
+                <div class="meta">Paradox Rift (226/182)</div>
+                <div class="price-tag">$2.87</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv1/217.png" alt="Klawf">
+                <h3>Klawf</h3>
+                <div class="meta">Scarlet & Violet (217/198)</div>
+                <div class="price-tag">$3.08</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3/203.png" alt="Larvitar">
+                <h3>Larvitar</h3>
+                <div class="meta">Obsidian Flames (203/197)</div>
+                <div class="price-tag">$3.99</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv7/153.png" alt="Meditite">
+                <h3>Meditite</h3>
+                <div class="meta">Stellar Crown (153/142)</div>
+                <div class="price-tag">$3.94</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh9tg/TG07.png" alt="Dedenne">
+                <h3>Dedenne</h3>
+                <div class="meta">Brilliant Stars Trainer Gallery (TG07/30)</div>
+                <div class="price-tag">$5.47</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv9/169.png" alt="Noibat">
+                <h3>Noibat</h3>
+                <div class="meta">Journey Together (169/159)</div>
+                <div class="price-tag">$3.06</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3/207.png" alt="Pidgey">
+                <h3>Pidgey</h3>
+                <div class="meta">Obsidian Flames (207/197)</div>
+                <div class="price-tag">$7.63</div>
+            </div>
+
+            <div class="card-item">
+            <img src="https://images.pokemontcg.io/sv8/197.png" alt="Ceruledge">
+            <h3>Ceruledge</h3>
+            <div class="meta">Surging Sparks (197/191)</div>
+            <div class="price-tag">$14.71</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3pt5/168.png" alt="Charmander">
+                <h3>Charmander</h3>
+                <div class="meta">151 (168/165)</div>
+                <div class="price-tag">$60.38</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3pt5/169.png" alt="Charmeleon">
+                <h3>Charmeleon</h3>
+                <div class="meta">151 (169/165)</div>
+                <div class="price-tag">$40.26</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swshp/SWSH143.png" alt="Pikachu V">
+                <h3>Pikachu V</h3>
+                <div class="meta">SWSH Black Star Promos (SWSH143/307)</div>
+                <div class="price-tag">$7.95</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swshp/SWSH063.png" alt="Pikachu V">
+                <h3>Pikachu V</h3>
+                <div class="meta">SWSH Black Star Promos (SWSH063/307)</div>
+                <div class="price-tag">$3.20</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv7/151.png" alt="Zeraora">
+                <h3>Zeraora</h3>
+                <div class="meta">Stellar Crown (151/142)</div>
+                <div class="price-tag">$9.32</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv3/228.png" alt="Charizard ex">
+                <h3>Charizard ex</h3>
+                <div class="meta">Obsidian Flames (228/197)</div>
+                <div class="price-tag">$27.26</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/me2/104.png" alt="Togedemaru">
+                <h3>Togedemaru</h3>
+                <div class="meta">Phantasmal Flames (104/94)</div>
+                <div class="price-tag">$2.21</div>
+            </div>
+
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv8/199.png" alt="Spheal">
+                <h3>Spheal</h3>
+                <div class="meta">Surging Sparks (199/191)</div>
+                <div class="price-tag">$4.84</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/rsv10pt5/112.png" alt="Vanillish">
+                <h3>Vanillish</h3>
+                <div class="meta">White Flare (112/86)</div>
+                <div class="price-tag">$7.87</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv8/204.png" alt="Mesprit">
+                <h3>Mesprit</h3>
+                <div class="meta">Surging Sparks (204/191)</div>
+                <div class="price-tag">$7.71</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh12pt5gg/GG10.png" alt="Mew">
+                <h3>Mew</h3>
+                <div class="meta">Crown Zenith Galarian Gallery (GG10/70)</div>
+                <div class="price-tag">$31.69</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/sv6/185.png" alt="Applin">
+                <h3>Applin</h3>
+                <div class="meta">Twilight Masquerade (185/167)</div>
+                <div class="price-tag">$5.48</div>
+            </div>
+            
+            <div class="card-item">
+                <img src="https://images.pokemontcg.io/swsh12pt5gg/GG20.png" alt="Latias">
+                <h3>Latias</h3>
+                <div class="meta">Crown Zenith Galarian Gallery (GG20/70)</div>
+                <div class="price-tag">$11.29</div>
+            </div>
+  
             <!-- Add more cards as needed -->
         </section>
 

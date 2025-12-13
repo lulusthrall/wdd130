@@ -1,0 +1,380 @@
+[
+  {
+    "original_query": "Bulbasaur MEG 133",
+    "name": "Bulbasaur",
+    "set": "Mega Evolution",
+    "number": "133",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/133.png",
+    "market_price": 13.88
+  },
+  {
+    "original_query": "Ivysaur MEG 134",
+    "name": "Ivysaur",
+    "set": "Mega Evolution",
+    "number": "134",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/134.png",
+    "market_price": 16.46
+  },
+  {
+    "original_query": "Venusaur MEG 177",
+    "name": "Mega Venusaur ex",
+    "set": "Mega Evolution",
+    "number": "177",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/177.png",
+    "market_price": 149.11
+  },
+  {
+    "original_query": "Caterpie MEW 172",
+    "name": "Caterpie",
+    "set": "151",
+    "number": "172",
+    "total_printed": 165,
+    "image": "https://images.pokemontcg.io/sv3pt5/172.png",
+    "market_price": 10.52
+  },
+  {
+    "original_query": "Crustle DRI 186",
+    "name": "Crustle",
+    "set": "Destined Rivals",
+    "number": "186",
+    "total_printed": 182,
+    "image": "https://images.pokemontcg.io/sv10/186.png",
+    "market_price": 2.35
+  },
+  {
+    "original_query": "Hydrapple DRI 188",
+    "name": "Hydrapple",
+    "set": "Destined Rivals",
+    "number": "188",
+    "total_printed": 182,
+    "image": "https://images.pokemontcg.io/sv10/188.png",
+    "market_price": 3.11
+  },
+  {
+    "original_query": "Iron Leaves TEF 203",
+    "name": "Iron Leaves ex",
+    "set": "Temporal Forces",
+    "number": "203",
+    "total_printed": 162,
+    "image": "https://images.pokemontcg.io/sv5/203.png",
+    "market_price": 24.14
+  },
+  {
+    "original_query": "Maractus JTG 160",
+    "name": "Maractus",
+    "set": "Journey Together",
+    "number": "160",
+    "total_printed": 159,
+    "image": "https://images.pokemontcg.io/sv9/160.png",
+    "market_price": 1.72
+  },
+  {
+    "original_query": "Ninjask MEG 137",
+    "name": "Ninjask",
+    "set": "Mega Evolution",
+    "number": "137",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/137.png",
+    "market_price": 3.28
+  },
+  {
+    "original_query": "Gyarados SVI 225",
+    "name": "Gyarados ex",
+    "set": "Scarlet & Violet",
+    "number": "225",
+    "total_printed": 198,
+    "image": "https://images.pokemontcg.io/sv1/225.png",
+    "market_price": 5.03
+  },
+  {
+    "original_query": "Inteleon MEG 142",
+    "name": "Inteleon",
+    "set": "Mega Evolution",
+    "number": "142",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/142.png",
+    "market_price": 2.64
+  },
+  {
+    "original_query": "Keldeo GG07/GG70",
+    "name": "Keldeo",
+    "set": "Crown Zenith Galarian Gallery",
+    "number": "GG07",
+    "total_printed": 70,
+    "image": "https://images.pokemontcg.io/swsh12pt5gg/GG07.png",
+    "market_price": 10.01
+  },
+  {
+    "original_query": "Lumineon GG39/GG70",
+    "name": "Lumineon V",
+    "set": "Crown Zenith Galarian Gallery",
+    "number": "GG39",
+    "total_printed": 70,
+    "image": "https://images.pokemontcg.io/swsh12pt5gg/GG39.png",
+    "market_price": 13.97
+  },
+  {
+    "original_query": "Manaphy GG06/GG70",
+    "name": "Manaphy",
+    "set": "Crown Zenith Galarian Gallery",
+    "number": "GG06",
+    "total_printed": 70,
+    "image": "https://images.pokemontcg.io/swsh12pt5gg/GG06.png",
+    "market_price": 3.08
+  },
+  {
+    "original_query": "Wailord JTG 162",
+    "name": "Wailord",
+    "set": "Journey Together",
+    "number": "162",
+    "total_printed": 159,
+    "image": "https://images.pokemontcg.io/sv9/162.png",
+    "market_price": 10.85
+  },
+  {
+    "original_query": "Wiglett SVI 206",
+    "name": "Wiglett",
+    "set": "Scarlet & Violet",
+    "number": "206",
+    "total_printed": 198,
+    "image": "https://images.pokemontcg.io/sv1/206.png",
+    "market_price": 9.66
+  },
+  {
+    "original_query": "Rapidash DRI 189",
+    "name": "Rapidash",
+    "set": "Destined Rivals",
+    "number": "189",
+    "total_printed": 182,
+    "image": "https://images.pokemontcg.io/sv10/189.png",
+    "market_price": 6.3
+  },
+  {
+    "original_query": "Vulpix MEG 138",
+    "name": "Vulpix",
+    "set": "Mega Evolution",
+    "number": "138",
+    "total_printed": 132,
+    "image": "https://images.pokemontcg.io/me1/138.png",
+    "market_price": 13.09
+  },
+  {
+    "original_query": "Pikachu MEW 173",
+    "name": "Pikachu",
+    "set": "151",
+    "number": "173",
+    "total_printed": 165,
+    "image": "https://images.pokemontcg.io/sv3pt5/173.png",
+    "market_price": 41.03
+  },
+  {
+    "original_query": "Pikachu SWSH062",
+    "name": "Pikachu VMAX",
+    "set": "SWSH Black Star Promos",
+    "number": "SWSH062",
+    "total_printed": 307,
+    "image": "https://images.pokemontcg.io/swshp/SWSH062.png",
+    "market_price": 10.13
+  },
+  {
+    "original_query": "Flygon SSP 222",
+    "name": "Flygon ex",
+    "set": "Surging Sparks",
+    "number": "222",
+    "total_printed": 191,
+    "image": "https://images.pokemontcg.io/sv8/222.png",
+    "market_price": 2.27
+  },
+  {
+    "original_query": "Hoopa PAR 226",
+    "name": "Hoopa ex",
+    "set": "Paradox Rift",
+    "number": "226",
+    "total_printed": 182,
+    "image": "https://images.pokemontcg.io/sv4/226.png",
+    "market_price": 2.87
+  },
+  {
+    "original_query": "Klawf SVI 217",
+    "name": "Klawf",
+    "set": "Scarlet & Violet",
+    "number": "217",
+    "total_printed": 198,
+    "image": "https://images.pokemontcg.io/sv1/217.png",
+    "market_price": 3.08
+  },
+  {
+    "original_query": "Larvitar OBF 203",
+    "name": "Larvitar",
+    "set": "Obsidian Flames",
+    "number": "203",
+    "total_printed": 197,
+    "image": "https://images.pokemontcg.io/sv3/203.png",
+    "market_price": 3.99
+  },
+  {
+    "original_query": "Meditite SCR 153",
+    "name": "Meditite",
+    "set": "Stellar Crown",
+    "number": "153",
+    "total_printed": 142,
+    "image": "https://images.pokemontcg.io/sv7/153.png",
+    "market_price": 3.94
+  },
+  {
+    "original_query": "Dedenne TG07/TGG30",
+    "name": "Dedenne",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG07",
+    "total_printed": 30,
+    "image": "https://images.pokemontcg.io/swsh9tg/TG07.png",
+    "market_price": 5.47
+  },
+  {
+    "original_query": "Noibat JTG 169",
+    "name": "Noibat",
+    "set": "Journey Together",
+    "number": "169",
+    "total_printed": 159,
+    "image": "https://images.pokemontcg.io/sv9/169.png",
+    "market_price": 3.06
+  },
+  {
+    "original_query": "Pidgey OBF 207",
+    "name": "Pidgey",
+    "set": "Obsidian Flames",
+    "number": "207",
+    "total_printed": 197,
+    "image": "https://images.pokemontcg.io/sv3/207.png",
+    "market_price": 7.63
+  },
+  {
+    "original_query": "Ceruledge SSP 197",
+    "name": "Ceruledge",
+    "set": "Surging Sparks",
+    "number": "197",
+    "total_printed": 191,
+    "image": "https://images.pokemontcg.io/sv8/197.png",
+    "market_price": 14.71
+  },
+  {
+    "original_query": "Charmander MEW 168",
+    "name": "Charmander",
+    "set": "151",
+    "number": "168",
+    "total_printed": 165,
+    "image": "https://images.pokemontcg.io/sv3pt5/168.png",
+    "market_price": 60.38
+  },
+  {
+    "original_query": "Charmeleon MEW 169",
+    "name": "Charmeleon",
+    "set": "151",
+    "number": "169",
+    "total_printed": 165,
+    "image": "https://images.pokemontcg.io/sv3pt5/169.png",
+    "market_price": 40.26
+  },
+  {
+    "original_query": "Pikachu SWSH143",
+    "name": "Pikachu V",
+    "set": "SWSH Black Star Promos",
+    "number": "SWSH143",
+    "total_printed": 307,
+    "image": "https://images.pokemontcg.io/swshp/SWSH143.png",
+    "market_price": 7.95
+  },
+  {
+    "original_query": "Pikachu SWSH063",
+    "name": "Pikachu V",
+    "set": "SWSH Black Star Promos",
+    "number": "SWSH063",
+    "total_printed": 307,
+    "image": "https://images.pokemontcg.io/swshp/SWSH063.png",
+    "market_price": 3.2
+  },
+  {
+    "original_query": "Zeraora SCR 151",
+    "name": "Zeraora",
+    "set": "Stellar Crown",
+    "number": "151",
+    "total_printed": 142,
+    "image": "https://images.pokemontcg.io/sv7/151.png",
+    "market_price": 9.32
+  },
+  {
+    "original_query": "Charizard OBF 228",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "228",
+    "total_printed": 197,
+    "image": "https://images.pokemontcg.io/sv3/228.png",
+    "market_price": 27.26
+  },
+  {
+    "original_query": "Togedemaru PFL 104",
+    "name": "Togedemaru",
+    "set": "Phantasmal Flames",
+    "number": "104",
+    "total_printed": 94,
+    "image": "https://images.pokemontcg.io/me2/104.png",
+    "market_price": 2.21
+  },
+  {
+    "original_query": "Spheal SSP 199",
+    "name": "Spheal",
+    "set": "Surging Sparks",
+    "number": "199",
+    "total_printed": 191,
+    "image": "https://images.pokemontcg.io/sv8/199.png",
+    "market_price": 4.84
+  },
+  {
+    "original_query": "Vanillish WHT 112",
+    "name": "Vanillish",
+    "set": "White Flare",
+    "number": "112",
+    "total_printed": 86,
+    "image": "https://images.pokemontcg.io/rsv10pt5/112.png",
+    "market_price": 7.87
+  },
+  {
+    "original_query": "Mesprit SSP 204",
+    "name": "Mesprit",
+    "set": "Surging Sparks",
+    "number": "204",
+    "total_printed": 191,
+    "image": "https://images.pokemontcg.io/sv8/204.png",
+    "market_price": 7.71
+  },
+  {
+    "original_query": "Mew GG10/GG70",
+    "name": "Mew",
+    "set": "Crown Zenith Galarian Gallery",
+    "number": "GG10",
+    "total_printed": 70,
+    "image": "https://images.pokemontcg.io/swsh12pt5gg/GG10.png",
+    "market_price": 31.69
+  },
+  {
+    "original_query": "Applin TWM 185",
+    "name": "Applin",
+    "set": "Twilight Masquerade",
+    "number": "185",
+    "total_printed": 167,
+    "image": "https://images.pokemontcg.io/sv6/185.png",
+    "market_price": 5.48
+  },
+  {
+    "original_query": "Latias GG20/GG70",
+    "name": "Latias",
+    "set": "Crown Zenith Galarian Gallery",
+    "number": "GG20",
+    "total_printed": 70,
+    "image": "https://images.pokemontcg.io/swsh12pt5gg/GG20.png",
+    "market_price": 11.29
+  }
+]
